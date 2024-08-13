@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- font-family: "Rubik", sans-serif; -->
+
+
+    <meta charset="UTF-8" />
+    <title>Laraib Portfolio</title>
+    <link rel="stylesheet" href="floating button.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            font-size: 2rem;
+            \\font-family: "Playwrite IT Moderna", cursive;
+            font-family: "Margarine", sans-serif;
+            color: white;
+        }
+
+        .nev {
+            display: flex;
+            justify-content: space-around;
+            height: 70px;
+            align-items: center;
+
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+
+        .box {
+            background-color: #4070f4;
+            position: fixed;
+            width: 100vw;
+        }
+
+        .uli {
+            list-style-type: none;
+            display: flex;
+            /* color: white; */
+        }
+
+        ul>li {
+            padding-left: 25px;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        ul>li>a:hover {
+            color: #b3c6fb;
+            font-size: 1.2rem;
+        }
+
+        .firstsec {
+            display: flex;
+            justify-content: space-around;
+            height: 38vw;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .firstsec>div {
+            width: 30%;
+            margin-top: 120px;
+            background-color: #d9e2fd;
+        }
+
+        .right1 img {
+            width: 100%;
+        }
+
+        .stil_nam {
+            font-family: "Libre Baskerville", serif;
+            font-size: 2rem;
+            /* color: blueviolet; */
+            color: #537ef5;
+        }
+
+        #element {
+            font-family: "Libre Baskerville", serif;
+            font-size: 2rem;
+            color: blueviolet;
+        }
+
+        .left1 {
+            font-size: 2rem;
+        }
+
+        .hr1 {
+            border: 0px;
+            background-color: brown;
+            height: 1px;
+        }
+
+        .boxe:hover {
+            background-color: #4070f4;
+            color: #ffffff;
+            box-shadow: 0 0 50px #4070f4;
+            box-shadow: 5px 5px 0px #799bf7, 10px 10px 0px #b3c6fb, 0 0 50px #4070f4;
+        }
+
+        .boxe {
+            padding: 6px;
+            box-shadow: 0px 0px 30px #b3c6fb;
+            /* border: 2px solid; */
+            box-sizing: border-box;
+            width: 30vw;
+            /* height: 20vw; */
+            justify-content: space-around;
+            border-radius: 15px;
+            text-align: center;
+            /* padding: 50px; */
+        }
+
+        .boxe>h2 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .edout {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10%;
+
+
+            /* text-align: center; */
+            /* justify-content: ; */
+        }
+
+        .butnd {
+            margin-left: 120px;
+            margin-top: 17px;
+        }
+
+        .firstb {
+            margin-top: 50px;
+            justify-content: space-around;
+            /* height: 35vw; */
+            align-items: center;
+            /* margin: 0;
+            padding: 0; */
+        }
+
+        .ab {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+        }
+
+        .abdiv {
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            margin-top: 20px;
+            /* margin-left: 0; */
+        }
+
+        .cen {
+
+            margin-top: 70px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 0;
+            text-align: justify;
+            margin-bottom: 80px;
+            /* padding: 100px; */
+        }
+
+        .hrm {
+            border: 0px;
+            background-color: #4070f4;
+            height: 3px;
+            width: 70px;
+            margin: auto;
+            margin-bottom: 3px;
+
+        }
+
+        .hrm1 {
+            border: 0px;
+            background-color: #4070f4;
+            height: 3px;
+            width: 35px;
+            text-align: center;
+            margin: auto;
+
+        }
+
+        .abdivo {
+            /* border: 2px solid; */
+            align-items: center;
+            /* height: 58vh; */
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-around;
+        }
+
+        .boxer {
+            /* border: 2px solid; */
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .abdivl {
+            width: 70%;
+            margin-right: auto;
+            align-content: center;
+            margin-left: 5px;
+
+        }
+
+        .abdivr {
+            width: 25%;
+            margin-right: 0px;
+            align-items: center;
+            /* margin-top: 80px; */
+            /* align-self: auto; */
+            align-content: center;
+            background-color: #a0b8fa;
+            border-top-left-radius: 150px;
+            border-bottom-left-radius: 60px;
+            height: 300px;
+            /* border: 2px solid; */
+        }
+
+        .secondsec {
+            /* border: 2px solid; */
+            margin: 10px;
+            text-align: center;
+            height: 30vw;
+            /* justify-content: center; */
+            /* padding: auto; */
+
+        }
+
+        .ted {
+            font-family: "Poppins", sans-serif;
+            margin-top: 20px;
+        }
+
+        .hre {
+            /* margin-top: 200000px; */
+            border: 0px;
+            background-color: #4070f4;
+            height: 3.5px;
+            width: 240px;
+            margin: auto;
+            margin-bottom: 4px;
+            /* border-radius: 20%; */
+
+        }
+
+        .hre1 {
+            border: 0px;
+            background-color: #4070f4;
+            height: 3px;
+            width: 120px;
+            /* text-align: center; */
+            margin: auto;
+            /* border-radius: 20%; */
+
+        }
+
+        .ed {
+            font-family: "Rubik", sans-serif;
+            font-weight: 550;
+            margin-top: 20px;
+        }
+
+        .boxe>p {
+            margin: auto;
+            /* padding: 2%; */
+            text-align: center;
+            /* margin-top: 10px; */
+            /* margin-bottom: 10px; */
+
+        }
+
+        .p1,
+        .p3 {
+            padding: 30px;
+        }
+
+        .p2 {
+            padding: 10px;
+        }
+
+        .sec3 {
+            /* border: 2px solid; */
+            /* margin: 10px; */
+            text-align: center;
+            /* height: 38vw; */
+            margin-top: 150px;
+            /* justify-content: center; */
+            /* padding: auto; */
+
+        }
+
+        .hrp {
+            /* margin-top: 200000px; */
+            border: 0px;
+            background-color: #4070f4;
+            height: 3.5px;
+            width: 110px;
+            margin: auto;
+            margin-bottom: 4px;
+            /* border-radius: 20%; */
+
+        }
+
+        .hrp1 {
+            border: 0px;
+            background-color: #4070f4;
+            height: 3px;
+            width: 55px;
+            /* text-align: center; */
+            margin: auto;
+            /* border-radius: 20%; */
+
+        }
+
+        .sec4 {
+            /* border: 2px solid; */
+            /* margin: 10px; */
+            text-align: center;
+            height: 38vw;
+            margin-top: 100px;
+            /* justify-content: center; */
+            /* padding: auto; */
+
+        }
+
+        .hra {
+            /* margin-top: 200000px; */
+            border: 0px;
+            background-color: #4070f4;
+            height: 3.5px;
+            width: 150px;
+            margin: auto;
+            margin-bottom: 4px;
+            /* border-radius: 20%; */
+
+        }
+
+        .hra1 {
+            border: 0px;
+            background-color: #4070f4;
+            height: 3px;
+            width: 75px;
+            /* text-align: center; */
+            margin: auto;
+            /* border-radius: 20%; */
+
+        }
+
+        .cont {
+            margin-top: 100px;
+            /* border: 2px solid ; */
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            /* margin: auto; */
+            margin-left: 50px;
+            /* margin-right: 50px; */
+        }
+
+        .cont1 {
+            margin-left: 10px;
+            width: 70%;
+            /* margin-right: 150px; */
+            /* border: 2px solid; */
+            /* background-color: #d9e2fd; */
+            font-size: 1.2rem;
+        }
+
+        .ctr {
+            /* text-align: /justify; */
+            justify-content: right;
+            margin-top: 50px;
+            background-color: #ecf1fe;
+            height: 150px;
+            text-align: center;
+            /* border: 2px solid black; */
+        }
+        .link{
+            text-decoration: none;
+            color: #000;
+        }
+        .link:hover{
+            color: #ffffff;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="box">
+        <nav class="nev">
+            <div class="left">
+                Mohammad Laraib Portfolio
+            </div>
+            <div class="right">
+                <ul class="uli">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contect Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstsec">
+            <div class="left1">
+                <div>Hi, My Name is <p class="space"></p><span id="element"></span></div>
+                <div>And I Am a Web Developer</div>
+            </div>
+
+            <div class="right1">
+                <img src="first1.jpg" alt="null">
+            </div>
+        </section>
+        <section class="firstb">
+
+            <hr class="hr1">
+            <div class="abdiv">
+                <h1 class="ab">About</h1>
+                <hr class="hrm">
+                <hr class="hrm1">
+            </div>
+            <div class="cen">
+                <div class="abdivo">
+                    <div class="abdivl , boxer , arial">
+                        <p>Hello! I am Mohammad Laraib, a motivated and aspiring engineering graduate with a passion for
+                            technology and software development. With a strong foundation in programming languages like
+                            C, C++, JavaScript, and proficiency in HTML, CSS. I bring both technical skills and a
+                            collaborative spirit to any team. I have honed my abilities through academic pursuits and
+                            practical experiences, including a PHP programming role where I improved development
+                            processes and mentored junior developers.</p>
+                        <p>I specialize in front-end programming, data science, and utilize various tools and
+                            technologies such as Microsoft Excel. My education includes a B.Tech in Computer Science
+                            with a specialization in AI/ML/DL from Teerthanker Mahaveer University. Additionally, I hold
+                            certifications in Java, Python, HTML, Blockchain, Kubernetes, and Cloud Computing.</p>
+                        <p>In my spare time, I work on innovative projects like real-time object detection using YOLO
+                            and a comprehensive Library Management System. Recently, I also developed a personal
+                            portfolio website to showcase my projects and skills. This portfolio website highlights my
+                            work in a visually engaging manner, provides detailed project descriptions, and integrates
+                            seamlessly with my professional online presence.</p>
+                        <p>I am always eager to learn new technologies and methodologies to stay at the forefront of the
+                            software engineering field.</p>
+                        <p>Feel free to connect with me on <a
+                                href="https://www.linkedin.com/in/mohammad-laraib-69a018244?">LinkedIn</a> or contact me
+                            at <a href="mailto: mohammadlaraib96@gmail.com">mohammadlaraib96@gmail.com</a>.</p>
+                    </div>
+                    <div class="abdivr , boxer"><img src="about.png" alt="about"></div>
+                </div>
+            </div>
+        </section>
+        <section class="secondsec">
+            <hr class="hr1">
+            <h1 class="ted">Education Background</h1>
+            <hr class="hre">
+            <hr class="hre1">
+            <div class="edout">
+                <div class="boxe">
+                    <h2 class="ed">B.tech (cse)</h2>
+                    <p class="p1">Teerthanker Mahaveer University, Moradabad, Uttar Pradesh (2021-2024)</p>
+                </div>
+                <div class="boxe">
+                    <h2 class="ed">Diploma In Computer Science</h2>
+                    <p class="p1">Teerthanker Mahaveer University, Moradabad, Uttar Pradesh (2018-2021)</p>
+                </div>
+                <div class="boxe">
+                    <h2 class="ed">High School</h2>
+                    <p class="p3">St. Paul's School, Rampur, Uttar Pradesh (2017)</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec3">
+            <hr class="hr1">
+            <h1 class="ted">Projects</h1>
+            <hr class="hrp">
+            <hr class="hrp1">
+            <div class="edout">
+                <div class="boxe">
+                    <h2 class="ed">Portfolio Websites</h2>
+                    <p class="p1">Designed and developed several portfolio websites showcasing my skills and projects.
+                        These websites included sections for work experience, project details, and contact information,
+                        effectively presenting my professional profile to potential employers.</p>
+                </div>
+                <div class="boxe"><a class="link"  href="https://laraib-portfolio.000webhostapp.com/">
+                    <h2 class="ed">Netflix Clone Website</h2>
+                    <p class="p1">Created a clone of the Apple website using HTML, CSS, and JavaScript. This project
+                        involved replicating the design and functionality of the original site, including interactive
+                        elements, responsive design, and user-friendly navigation.</p></a>
+                </div>
+                <div class="boxe">
+                    <h2 class="ed">Library Management System</h2>
+                    <p class="p3">Developed and implemented a comprehensive Library Management System to manage book
+                        acquisitions, member registrations, book circulation, and inventory tracking. This system
+                        streamlined library operations, improved resource management, and enhanced user experience.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec4">
+            <hr class="hr1">
+            <h1 class="ted">Contect Me</h1>
+            <hr class="hra">
+            <hr class="hra1">
+            <div class="cont">
+                <div class="cont1">Thank you for visiting my portfolio! If you have any questions, project inquiries, or
+                    just want to say hello, feel free to reach out to me. I look forward to connecting with you!<div
+                        class="ctr">
+
+                        <div class="cntm">
+                            <h2>Contact Information: </h2>
+                            <br>
+                            <p>Email: <a href="mailto: mohammadlaraib96@gmail.com">mohammadlaraib96@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+918650165583">+91 86501 65583</a></p>
+                            <p>LinkedIn: <a
+                                    href="https://www.linkedin.com/in/mohammad-laraib-69a018244?">linkedin.com/in/mohammad-laraib-</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="cont2"><form action="https://formspree.io/f/yourformid" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+                  </div> -->
+                </div>
+
+
+        </section>
+        <section>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+            <a href="Mohammad Laraib.pdf" download="Mohammad Laraib.pdf">
+
+
+                <div class="floating-container">
+
+                    <div class="floating-button"><img class="imgd" src="download (5).png" alt="">Resume</div>
+            </a>
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- Element to contain animated typing -->
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Mohammad Laraib'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#elemen', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
